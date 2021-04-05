@@ -23,7 +23,7 @@ def wish():
 	elif hour>=12 and hour<18:
 		speak("Good Afternoon Sir I am virtual assistant craig")
 	else:
-		speak("Good Night Sir I am virtual assistant craig")
+		speak("Good evening Sir I am virtual assistant craig")
 			
 def take_command():
 	r=sr.Recognizer()
@@ -58,6 +58,10 @@ if __name__=="__main__":
 		music_dir="./music"
 		musics=os.listdir(music_dir)
 		os.startfile(os.path.join(music_dir,musics[0]))
+	elif 'open the office' in query or "open fmovies online" in query:
+		webbrowser.open("https://fmovies.to/film/the-office.1q4p")
+		speak("opening the office")
+
 	# elif 'alarm' in query:
 	# 	mydate.alarm(query)
 	elif 'good bye' in query:
