@@ -17,18 +17,9 @@ def alarm(text):
 			if MinAlarm==datetime.datetime.now().minute:
 				print("Alarm is running")
 				winsound.PlaySound("C:\\Users\\ruhel\\Downloads\\Never Gonna Give You Up Original.mp3",winsound.SND_LOOP)
-			elif MinAlarm>datetime.datetime.now().minute:
+			elif MinAlarm<datetime.datetime.now().minute:
 				break
 
-
-
-
-
-
-	print(HourAlarm)
-	print(MinAlarm)
-
-
-alarm("Set Alarm at 6:35 pm ")
+# alarm("Set Alarm at 6:40 pm ")
 
 
